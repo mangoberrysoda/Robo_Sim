@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "c:/Z-MyDrive/Vaibhav/college_python_project/Robo_Sim/.venv/Scripts/python.exe",
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": ["tests"]
+}
