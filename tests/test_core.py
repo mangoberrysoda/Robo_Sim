@@ -1,7 +1,7 @@
-import robo_sim
+import sar_swarm
 
 
 def test_add():
-    assert robo_sim.add(2, 3) == 5
-    assert robo_sim.add(-1, 1) == 0
-    assert robo_sim.add(0, 0) == 0
+    assert sar_swarm.add(2, 3) == 5
+    assert sar_swarm.add(-1, 1) == 0
+    assert sar_swarm.add(0, 0) == 0
