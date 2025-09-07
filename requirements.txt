@@ -1,1 +1,4 @@
 pytest
+matplotlib
+ir_sim 
+pynput
