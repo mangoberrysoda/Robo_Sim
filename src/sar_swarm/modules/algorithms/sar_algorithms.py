@@ -30,6 +30,18 @@ class SensorFusion:
             for key, value in detection_map.items()
         ]
 
+    # Function process_detections with parameters: rgb_detections, thermal_detections, robot_position
+    def process_detections(self, rgb_detections, thermal_detections, robot_position):
+        """Process and fuse detections from RGB and thermal cameras."""
+        high_confidence_detection = "High"
+        low_confidence_detection = "Low"
+        # Add confidence based on detection of rgb_detections and thermal_detections
+       
+        if rgb_detections and thermal_detections:
+            return high_confidence_detection
+        elif rgb_detections or thermal_detections:
+            return low_confidence_detection
+
     def filter_false_positives(self, threshold=0.5):
         """Filter out detections with confidence below a certain threshold."""
         self.fused_detections = [

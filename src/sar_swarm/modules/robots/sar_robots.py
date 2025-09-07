@@ -1,6 +1,6 @@
-# Install IR-SIM and setup basic project structure
-# Create basic YAML configuration for 10 robots
-# Test multi-robot initialization in IR-SIM
+# Implement basic SAR robot class extending IR-SIM robot
+# Add battery management (simple linear drain)
+# Create robot state tracking
 
 # class SARRobot for with attributes: robot_id, battery_level, detected_survivors, explored_cells, and current_task, with functions to update_battery and get sensor_data
 

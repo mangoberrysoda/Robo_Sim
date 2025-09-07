@@ -1,6 +1,6 @@
-# Create RGB camera simulator (distance + line-of-sight)
-# Create thermal camera simulator (heat signature detection)
-# Integrate sensors with IR-SIM's existing LiDAR
+# Create 5 survivor objects with different properties
+# Implement heat signatures and visibility
+# Place survivors randomly behind obstacles
 # Class SARSurvivor for survivors with attributes: survivor_id, position, heat_signature, visibility, detected by [robot_ids]
 class SARSurvivor:
     def __init__(self, survivor_id, position, heat_signature=1.0, visibility=True):
@@ -23,3 +23,4 @@ class SARSurvivor:
         # Simple model: probability decreases with distance
         prob = max(0.0, 1.0 - (distance / 20.0))  # Assuming max effective range is 20 meters
         return prob * self.heat_signature  # Modulate by heat signature
+    
