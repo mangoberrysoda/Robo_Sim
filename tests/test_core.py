@@ -1,5 +1,5 @@
 import pytest
-from src.sar_swarm.modules.robots.sar_robots import SARRobot 
+from sar_swarm.modules.robots.sar_robots import SARRobot 
 
 def test_sar_robot_initial_battery():
     # basic smoke test: new SARRobot exposes a battery_level of 100
