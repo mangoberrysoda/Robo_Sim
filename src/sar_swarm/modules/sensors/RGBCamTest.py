@@ -238,13 +238,12 @@ class RGBCamTest:
                 # self.det_x_distance = line.length + np.random.normal(0, self.std)
                 # self.det_y_distance = 0 + np.random.normal(0, self.std)
                 # self.det_theta = self.angle_list[index] + np.random.normal(0, self.angle_std)
-                
+
                 if line.length < self.range_max - 0.02:
                     for index_obj in intersect_indices:
                         obj = env_param.objects[index_obj]
                         if obj.geometry.distance(line) < 0.1:
-
-
+                            None
 
     def get_human_detections(self):
         """
